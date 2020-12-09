@@ -1,0 +1,88 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: chartreuse;
+    display: grid;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+#counter{
+    text-align: center;
+    padding-top: 0.5em;
+    font-size: 4.5em;
+    height: 50px;
+}
+
+.container{
+    border: 1px solid black;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+    max-height: auto;
+    width: 500px;
+    max-width: 90%;
+    background-color:azure;
+    border-radius: 1em;
+    display: flex;
+    flex-direction:column;
+}
+
+.textRender{
+    padding: 5px;
+    font-size: 1.4em;
+    margin: 20px;
+}
+
+.quoteInput{
+   padding: 5px;
+   height: 240px;
+   max-height: auto;
+   resize: none;
+   background-color:aliceblue;
+   border: 3px solid #bde0ff; 
+   border-radius: 0.5em;
+   outline: none;
+   font-size: 1.4em;
+   margin: 20px;
+}
+
+.incorrect{
+    color: red;
+    text-decoration: underline;
+}
+
+.correct{
+    color: limegreen;
+}
+
+.rightGuessDivClass{
+    display: none;
+    position: absolute;
+    top:50%;
+    left:70%;
+    right: 10%;
+    max-height: 330px;
+    border-radius: 0.5em;
+    padding: 10px;
+    background-color: azure;
+}
+
+.par{
+  border-bottom: 0.5px solid black;
+  border-radius: 0.5em;
+  padding: 10px;
+  color: rgba(149, 165, 166, 1);
+  font-size: 1em;
+}
+
+@media screen and (max-width: 1130px){
+    .rightGuessDivClass{
+        display: none !important;
+    }
+}
